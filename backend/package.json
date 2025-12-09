@@ -1,0 +1,20 @@
+{
+  "name": "locadora-livros-backend",
+  "version": "1.0.0",
+  "description": "Backend da Locadora de Livros",
+  "main": "src/server.js",
+  "scripts": {
+    "start": "node src/server.js",
+    "dev": "nodemon src/server.js"
+  },
+  "keywords": ["locadora", "livros", "api"],
+  "author": "Seu Nome",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2",
+    "cors": "^2.8.5"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.1"
+  }
+}
