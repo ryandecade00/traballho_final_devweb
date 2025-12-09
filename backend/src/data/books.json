@@ -1,0 +1,38 @@
+[
+  {
+    "id": "1",
+    "title": "1984",
+    "author": "George Orwell",
+    "year": 1949,
+    "genre": "Distopia",
+    "price": 12.50,
+    "description": "Uma visão sombria de um futuro totalitário onde o Grande Irmão tudo vê e controla.",
+    "cover": "",
+    "available": true,
+    "createdAt": "2024-12-08T10:00:00.000Z"
+  },
+  {
+    "id": "2",
+    "title": "O Senhor dos Anéis",
+    "author": "J.R.R. Tolkien",
+    "year": 1954,
+    "genre": "Fantasia",
+    "price": 18.00,
+    "description": "A épica jornada de Frodo para destruir o Um Anel.",
+    "cover": "",
+    "available": true,
+    "createdAt": "2024-12-08T10:00:00.000Z"
+  },
+  {
+    "id": "3",
+    "title": "Harry Potter e a Pedra Filosofal",
+    "author": "J.K. Rowling",
+    "year": 1997,
+    "genre": "Fantasia",
+    "price": 15.00,
+    "description": "O início da jornada mágica de Harry Potter.",
+    "cover": "",
+    "available": true,
+    "createdAt": "2024-12-08T10:00:00.000Z"
+  }
+]
