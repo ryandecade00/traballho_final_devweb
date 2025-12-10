@@ -1,70 +1,169 @@
-# Getting Started with Create React App
+📁 Estrutura Geral do Projeto
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+O projeto foi dividido em duas camadas principais — Backend e Frontend, cada uma com organização independente para facilitar a manutenção e escalabilidade.
 
-## Available Scripts
+🟦 Backend (Node.js + Express)
 
-In the project directory, you can run:
+O backend segue o padrão arquitetural CSR (Controller–Service–Repository), com pastas separadas para cada responsabilidade.
 
-### `npm start`
+backend/
+│ package.json
+│ package-lock.json
+│ server.js
+│
+└───src/
+    │
+    ├── controllers/
+    │     ├── bookController.js
+    │     └── rentalController.js
+    │
+    ├── services/
+    │     ├── bookService.js
+    │     └── rentalService.js
+    │
+    ├── repositories/
+    │     ├── bookRepository.js
+    │     └── rentalRepository.js
+    │
+    ├── routes/
+    │     ├── bookRoutes.js
+    │     └── rentalRoutes.js
+    │
+    ├── data/
+    │     ├── books.json
+    │     └── rentals.json
+    │
+    └── middlewares/
+          ├── logMiddleware.js
+          ├── errorMiddleware.js
+          └── validationMiddleware.js
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Descrição geral
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+controllers/ → recebem requisições HTTP e chamam os services
 
-### `npm test`
+services/ → contém lógica de negócio
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+repositories/ → realizam persistência em JSON
 
-### `npm run build`
+routes/ → expõem as APIs REST
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+middlewares/ → segurança, validação e log
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+data/ → banco de dados em arquivos JSON
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+🟦 Frontend (React)
 
-### `npm run eject`
+O frontend utiliza React com estrutura organizada em camadas típicas do Create React App, com arquivos de interface e configuração separados.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+frontend/
+│ package.json
+│ package-lock.json
+│ README.md
+│ relatorio.md
+│
+├───public/
+│    ├── favicon.ico
+│    ├── index.html
+│    ├── logo192.png
+│    ├── logo512.png
+│    └── manifest.json
+│
+└───src/
+     ├── App.css
+     ├── App.js
+     ├── App.test.js
+     ├── index.js
+     ├── index.css
+     ├── logo.svg
+     ├── reportWebVitals.js
+     └── setupTests.js
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Descrição geral
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+public/ contém arquivos estáticos e HTML principal
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+src/ contém a aplicação React, Hooks, estilos e renderização
 
-## Learn More
+index.js é o ponto de entrada do React
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+App.js contém a interface principal
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+📌 Observação importante
 
-### Code Splitting
+Essa organização reflete fielmente:
+✔ separação de responsabilidades
+✔ arquitetura em camadas
+✔ divisão entre frontend e backend
+✔ uso de JSON como persistência
+✔ uso de React no cliente
+✔ uso de Express/API no servidor
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+O projeto foi organizado em duas camadas independentes — Backend e Frontend — permitindo uma arquitetura desacoplada e escalável. O Backend segue o padrão Controller-Service-Repository, enquanto o Frontend utiliza React com componentes separados e estilização modular. O uso de arquivos JSON simplificou a persistência e permitiu foco no desenvolvimento das lógicas de negócio e UI.
 
-### Analyzing the Bundle Size
+A. Estrutura Completa do Projeto
+locadora-livros/
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+Backend:
 
-### Making a Progressive Web App
+bash
+cd backend
+npm install
+npm run dev
+# Servidor rodando em http://localhost:3000
+Frontend:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+bash
+cd frontend
+npm install
+npm start
+# Aplicação rodando em http://localhost:3001
+C. Endpoints da API Documentados
+Livros:
 
-### Advanced Configuration
+GET /api/books - Lista todos os livros
+GET /api/books?search=termo - Busca livros por termo
+GET /api/books/:id - Busca livro específico
+POST /api/books - Cria novo livro
+PUT /api/books/:id - Atualiza livro
+DELETE /api/books/:id - Remove livro
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+Aluguéis:
 
-### Deployment
+POST /api/rentals - Cria novo aluguel
+GET /api/rentals - Lista todos os aluguéis
+GET /api/rentals/:id - Busca aluguel específico
+D. Exemplos de Conventional Commits Utilizados
+feat: implementa middleware de log de requisições
+feat: adiciona Repository de livros com persistência JSON
+feat: cria Service de livros com lógica de negócio
+feat: implementa Controller de livros
+feat: define rotas de livros (GET, POST, PUT, DELETE)
+feat: adiciona sistema de carrinho de compras
+feat: implementa painel administrativo
+style: adiciona design responsivo com CSS puro
+fix: corrige validação de email no frontend
+docs: adiciona documentação completa da API
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+Documentação Oficial:
 
-### `npm run build` fails to minify
+Node.js Documentation. Disponível em: https://nodejs.org/docs/
+Express.js Guide. Disponível em: https://expressjs.com/
+React Documentation. Disponível em: https://react.dev/
+MDN Web Docs - JavaScript. Disponível em: https://developer.mozilla.org/
+Conventional Commits:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Conventional Commits Specification. Disponível em: https://www.conventionalcommits.org/
+Conceitos de Arquitetura:
+
+Martin Fowler - Patterns of Enterprise Application Architecture
+Clean Code principles by Robert C. Martin
+CSS e Responsividade:
+
+CSS-Tricks - A Complete Guide to Flexbox
+CSS-Tricks - A Complete Guide to Grid
+MDN Web Docs - Responsive Design
+
+Desenvolvido por Ryan Machado e Gabriel Tedesco
+Universidade Comunitária da Região de Chapecó - UNOCHAPECÓ
+Dezembro de 2025.
