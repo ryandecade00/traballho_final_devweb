@@ -244,11 +244,11 @@ body {
 
 .form-input:focus {
   outline: none;
-  border-color: #4c51bf;
+  border-color: #134f1b;
 }
 
 .total-box {
-  background: #4c51bf;
+  background: #134f1b;
   color: white;
   padding: 1.5rem;
   border-radius: 0.5rem;
