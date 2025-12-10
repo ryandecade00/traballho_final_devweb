@@ -5,23 +5,12 @@
     "author": "George Orwell",
     "year": 1949,
     "genre": "Distopia",
-    "price": 12.50,
-    "description": "Uma visão sombria de um futuro totalitário onde o Grande Irmão tudo vê e controla.",
+    "price": 12.5,
+    "description": "Uma visão sombria de um futuro totalitário onde o Grande Irmão tudo vê e controla.asdadada a",
     "cover": "",
     "available": true,
-    "createdAt": "2024-12-08T10:00:00.000Z"
-  },
-  {
-    "id": "2",
-    "title": "O Senhor dos Anéis",
-    "author": "J.R.R. Tolkien",
-    "year": 1954,
-    "genre": "Fantasia",
-    "price": 18.00,
-    "description": "A épica jornada de Frodo para destruir o Um Anel.",
-    "cover": "",
-    "available": true,
-    "createdAt": "2024-12-08T10:00:00.000Z"
+    "createdAt": "2024-12-08T10:00:00.000Z",
+    "updatedAt": "2025-12-09T21:12:12.264Z"
   },
   {
     "id": "3",
@@ -29,10 +18,23 @@
     "author": "J.K. Rowling",
     "year": 1997,
     "genre": "Fantasia",
-    "price": 15.00,
+    "price": 15,
     "description": "O início da jornada mágica de Harry Potter.",
     "cover": "",
     "available": true,
     "createdAt": "2024-12-08T10:00:00.000Z"
+  },
+  {
+    "id": "1765315058210",
+    "title": "A Maior Mentira já dita",
+    "author": "Eu mesmo",
+    "year": 2002,
+    "genre": "mentira",
+    "price": 0.01,
+    "description": "Uma mentira contadas varias vezes se torna verdade.",
+    "cover": "",
+    "available": true,
+    "createdAt": "2025-12-09T21:17:38.210Z",
+    "updatedAt": "2025-12-09T23:24:31.968Z"
   }
 ]

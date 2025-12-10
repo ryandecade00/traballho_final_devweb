@@ -1,1 +1,51 @@
-[]
+[
+  {
+    "id": "1765314642520",
+    "customerName": "ryanmachado2002@gmail.com",
+    "customerEmail": "13ryanmachado2002@gmail.com",
+    "books": [
+      {
+        "id": "1",
+        "title": "1984",
+        "price": 12.5
+      },
+      {
+        "id": "2",
+        "title": "O Senhor dos Anéis",
+        "price": 18
+      },
+      {
+        "id": "3",
+        "title": "Harry Potter e a Pedra Filosofal",
+        "price": 15
+      }
+    ],
+    "days": 13,
+    "totalPrice": 591.5,
+    "returnDate": "2025-12-22T21:10:42.520Z",
+    "status": "active",
+    "createdAt": "2025-12-09T21:10:42.520Z"
+  },
+  {
+    "id": "1765314719250",
+    "customerName": "diabao",
+    "customerEmail": "13ryanmachado2002@gmail.com",
+    "books": [
+      {
+        "id": "2",
+        "title": "O Senhor dos Anéis",
+        "price": 18
+      },
+      {
+        "id": "3",
+        "title": "Harry Potter e a Pedra Filosofal",
+        "price": 15
+      }
+    ],
+    "days": 9,
+    "totalPrice": 297,
+    "returnDate": "2025-12-18T21:11:59.249Z",
+    "status": "active",
+    "createdAt": "2025-12-09T21:11:59.250Z"
+  }
+]
