@@ -355,6 +355,10 @@ body {
   animation: slideIn 0.3s;
 }
 
+.teste {
+  display: none;
+}
+
 @keyframes slideIn {
   from {
     transform: translateX(100%);
