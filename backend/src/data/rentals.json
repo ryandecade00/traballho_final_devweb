@@ -47,5 +47,47 @@
     "returnDate": "2025-12-18T21:11:59.249Z",
     "status": "active",
     "createdAt": "2025-12-09T21:11:59.250Z"
+  },
+  {
+    "id": "1765382331061",
+    "customerName": "Leitor assíduo ",
+    "customerEmail": "leiomuitão@mesmo.com",
+    "books": [
+      {
+        "id": "3",
+        "title": "Harry Potter e a Pedra Filosofal",
+        "price": 8
+      },
+      {
+        "id": "1",
+        "title": "1984",
+        "price": 5.5
+      },
+      {
+        "id": "1765315058210",
+        "title": "A Maior Mentira já dita",
+        "price": 0.9
+      },
+      {
+        "id": "1765382125716",
+        "title": "Harry Potter e o Prisioneiro de Azkaban ",
+        "price": 8
+      },
+      {
+        "id": "1765382227045",
+        "title": "Harry Potter e o Cálice de Fogo",
+        "price": 8
+      },
+      {
+        "id": "1765382033406",
+        "title": "Harry Potter e a Câmara Secreta ",
+        "price": 8
+      }
+    ],
+    "days": 18,
+    "totalPrice": 691.1999999999999,
+    "returnDate": "2025-12-28T15:58:51.060Z",
+    "status": "active",
+    "createdAt": "2025-12-10T15:58:51.061Z"
   }
 ]
