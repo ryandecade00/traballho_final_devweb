@@ -1,8 +1,8 @@
-📁 Estrutura Geral do Projeto
+Estrutura Geral do Projeto
 
 O projeto foi dividido em duas camadas principais — Backend e Frontend, cada uma com organização independente para facilitar a manutenção e escalabilidade.
 
-🟦 Backend (Node.js + Express)
+Backend (Node.js + Express)
 
 O backend segue o padrão arquitetural CSR (Controller–Service–Repository), com pastas separadas para cada responsabilidade.
 
@@ -52,7 +52,7 @@ middlewares/ → segurança, validação e log
 
 data/ → banco de dados em arquivos JSON
 
-🟦 Frontend (React)
+Frontend (React)
 
 O frontend utiliza React com estrutura organizada em camadas típicas do Create React App, com arquivos de interface e configuração separados.
 
@@ -89,38 +89,42 @@ index.js é o ponto de entrada do React
 
 App.js contém a interface principal
 
-📌 Observação importante
-
-Essa organização reflete fielmente:
-✔ separação de responsabilidades
-✔ arquitetura em camadas
-✔ divisão entre frontend e backend
-✔ uso de JSON como persistência
-✔ uso de React no cliente
-✔ uso de Express/API no servidor
-
 O projeto foi organizado em duas camadas independentes — Backend e Frontend — permitindo uma arquitetura desacoplada e escalável. O Backend segue o padrão Controller-Service-Repository, enquanto o Frontend utiliza React com componentes separados e estilização modular. O uso de arquivos JSON simplificou a persistência e permitiu foco no desenvolvimento das lógicas de negócio e UI.
 
-A. Estrutura Completa do Projeto
+A. Root
 locadora-livros/
 
-Backend:
+-=- COMO INICIALIZAR -=-
 
+Backend:
 bash
 cd backend
 npm install
 npm run dev
 # Servidor rodando em http://localhost:3000
-Frontend:
 
+Frontend:
 bash
 cd frontend
 npm install
 npm start
 # Aplicação rodando em http://localhost:3001
-C. Endpoints da API Documentados
-Livros:
 
+Durante o inicio da execução do projeto surgirão dos alertas que serão necessárias interação do usuário para poder dar sequencia no uso.
+
+1. Após executar o comando "npm start", será necessário realizar uma confirmação de execução, pressione "Y" para prosseguir.
+Print: https://prnt.sc/aJSPnAPvj1qp
+
+2. Após acessar a página web, surgirá uma tela de erro do PostCSS, haverá um X no canto superior direito para fechar está mensagem.
+Print: https://prnt.sc/GS36jOE991eQ
+
+Após estas rápidas interações do usuário, a página estará totalmente funcional.
+
+=-=-=-=-=
+
+C. Endpoints da API Documentados
+
+Livros:
 GET /api/books - Lista todos os livros
 GET /api/books?search=termo - Busca livros por termo
 GET /api/books/:id - Busca livro específico
@@ -128,8 +132,7 @@ POST /api/books - Cria novo livro
 PUT /api/books/:id - Atualiza livro
 DELETE /api/books/:id - Remove livro
 
-Aluguéis:
-
+Imports:
 POST /api/rentals - Cria novo aluguel
 GET /api/rentals - Lista todos os aluguéis
 GET /api/rentals/:id - Busca aluguel específico
@@ -154,14 +157,8 @@ MDN Web Docs - JavaScript. Disponível em: https://developer.mozilla.org/
 Conventional Commits:
 
 Conventional Commits Specification. Disponível em: https://www.conventionalcommits.org/
+
 Conceitos de Arquitetura:
-
-Martin Fowler - Patterns of Enterprise Application Architecture
-Clean Code principles by Robert C. Martin
-CSS e Responsividade:
-
-CSS-Tricks - A Complete Guide to Flexbox
-CSS-Tricks - A Complete Guide to Grid
 MDN Web Docs - Responsive Design
 
 Desenvolvido por Ryan Machado e Gabriel Tedesco
